@@ -1,0 +1,3 @@
+[submodule "www/dev.mapaproject.org"]
+	path = www/dev.mapaproject.org
+	url = git@github.com:AshtreeCC/mapaproject.org.git
