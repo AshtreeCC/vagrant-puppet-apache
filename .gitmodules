@@ -1,3 +1,15 @@
 [submodule "www/dev.mapaproject.org"]
 	path = www/dev.mapaproject.org
 	url = git@github.com:AshtreeCC/mapaproject.org.git
+[submodule "puppet/modules/bootstrap"]
+	path = puppet/modules/bootstrap
+	url = git@github.com:AshtreeCC/puppet-bootstrap.git
+[submodule "puppet/modules/mysql"]
+	path = puppet/modules/mysql
+	url = git@github.com:AshtreeCC/puppet-mysql.git
+[submodule "puppet/modules/apache"]
+        path = puppet/modules/apache
+        url = git@github.com:AshtreeCC/puppet-apache.git
+[submodule "puppet/modules/php"]
+	path = puppet/modules/php
+	url = git@github.com:AshtreeCC/puppet-php-cgi.git

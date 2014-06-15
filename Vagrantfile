@@ -3,7 +3,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "prallels/ubuntu-12.04"
+  config.vm.box = "parallels/ubuntu-12.04"
 
   config.vm.network "private_network", ip: "192.168.56.150"
   config.vm.usable_port_range = (2200..2250)
@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :puppet, :module_path => "puppet/modules" do |puppet|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file  = "main.pp"
-    puppet.options = ["--verbose", "--heira_config /vagrant/heira.yaml", "--parser future"]
+    puppet.options = ["--verbose"]
   end
 
   config.ssh.username      = "vagrant"
