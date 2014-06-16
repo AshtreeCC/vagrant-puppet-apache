@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "private_network", ip: "192.168.56.150"
   config.vm.usable_port_range = (2200..2250)
 
-  config.vm.synced_folder "./www/", "/var/www", id: "vagrant-root",
+  config.vm.synced_folder "./www/", "/var/www/vhosts", id: "vagrant-root",
     :owner => "vagrant",
     :group => "www-data",
     :mount_options => ["dmode=775,fmode=664"],

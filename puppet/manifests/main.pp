@@ -10,11 +10,28 @@ class {
 }
 
 addServer { 'mapa':
-  site => 'dev.mapaproject.org',
-  root => '/vagrant/www/dev.mapaproject.org',
+  site => 'mapaproject.dev',
+  root => '/var/www/vhosts/dev.mapaproject.org',
+}
+
+addServer { 'mapa.local':
+  site => 'mapaproject.local',
+  root => '/var/www/vhosts/mapaproject.local',
 }
 
 addMysql { 'mapa_db':
     user => 'mapa_user',
     password => '854D#BRb'
 }
+
+
+addServer { 'dea':
+  site => 'padcollaboration.dev',
+  root => 'var/www/vhosts/padcollaboration.org',
+}
+
+addMysql { 'dea_db':
+    user => 'dea_user',
+    password => 'Zu|TXx+w'
+}
+

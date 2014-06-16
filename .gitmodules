@@ -13,3 +13,9 @@
 [submodule "puppet/modules/php"]
 	path = puppet/modules/php
 	url = git@github.com:AshtreeCC/puppet-php-cgi.git
+[submodule "www/padcollaboration.org"]
+	path = www/padcollaboration.org
+	url = git@github.com:AshtreeCC/padcollaboration.org.git
+[submodule "mapaproject.local"]
+	path = mapaproject.local
+	url = /Users/andrew/Workspace/apache.dev/www/mapaproject.local
