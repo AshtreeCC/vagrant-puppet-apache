@@ -24,6 +24,21 @@ addMysql { 'mapa_db':
     password => '854D#BRb'
 }
 
+addMysql { 'portals_mapa_db':
+    user => 'portals_mapa_usr',
+    password => 'C@P(I(7p'
+}
+
+addMysql { 'portals_pi_db':
+    user => 'portals_pi_user',
+    password => 'q|#F5|BM'
+}
+
+addMysql { 'local_mapa_db':
+    user => 'local_mapa_user',
+    password => 'qh}o{Wjp'
+}
+
 
 addServer { 'dea':
   site => 'padcollaboration.dev',
@@ -32,6 +47,6 @@ addServer { 'dea':
 
 addMysql { 'dea_db':
     user => 'dea_user',
-    password => 'Zu|TXx+w'
+    password => 'Zu|TXx6w'
 }
 
